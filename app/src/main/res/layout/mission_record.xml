@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_margin="10dp" />
+
+        <!-- Image Attachment -->
+       <ImageView
+            android:id="@+id/iv_attach_image"
+            android:layout_width="333dp"
+            android:layout_height="333dp"
+            android:background="@color/placeholder"
+            android:layout_gravity="center"
+            android:contentDescription="첨부 이미지" />
+
+        <!-- Mission Location -->
+        <TextView
+            android:id="@+id/tv_mission_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="미션 장소"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp" />
+
+        <!-- Mission Name -->
+        <TextView
+            android:id="@+id/tv_mission_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="미션 명"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp" />
+
+        <!-- Message Input -->
+        <EditText
+            android:id="@+id/et_message"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:hint="메시지를 작성하세요"
+            android:textAlignment="center"/>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/btn_save_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="저장하기"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/black"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 기존 색상들 -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- 새로 추가할 색상 -->
+    <color name="primary_color">#6200EE</color>
+    <color name="secondary_color">#03DAC5</color>
+
+    <color name="background_color">#F5F5F5</color>
+    <color name="map_background">#E0E0E0</color>
+    <color name="placeholder">#D3D3D3</color>
+</resources>
