@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Mission Title -->
+    <TextView
+        android:id="@+id/tv_mission_title1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="'오늘의 장소' 를 클릭하세요"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+    <TextView
+        android:id="@+id/tv_mission_title2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="'오늘의 미션' 을 클릭하세요"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        android:gravity="center" />
+
+    <!-- Map View -->
+    <FrameLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/map_background" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Button for Mission Creation -->
+        <Button
+            android:id="@+id/btn_mission_location"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:text="오늘의 장소"
+            android:textSize="20sp" />
+
+        <!-- Button for Mission Creation -->
+        <Button
+            android:id="@+id/btn_create_mission"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:text="오늘의 미션"
+            android:textSize="20sp" />
+
+        <!-- Button for Mission Completion -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <!-- Button for Mission Creation -->
+        <Button
+            android:id="@+id/btn_mission_start"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+            android:text="미션 시작"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>
